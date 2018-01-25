@@ -1,0 +1,13 @@
+body {
+	font-family: "arial", sans-serif;
+}
+
+div.search img {
+	width: 550px;
+	height: auto;
+}
+
+ul.rightmenu img {
+	height: 15px;
+	width: 15px;
+}
