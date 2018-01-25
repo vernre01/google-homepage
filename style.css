@@ -1,5 +1,7 @@
 body {
 	font-family: "arial", sans-serif;
+	min-width: 980px;
+	min-height: 460px;
 }
 
 div.search img {
@@ -10,4 +12,26 @@ div.search img {
 ul.rightmenu img {
 	height: 15px;
 	width: 15px;
+}
+
+.leftmenu, .rightmenu {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.leftmenu {
+	float: left;
+}
+
+.rightmenu {
+	float: right;
+	display: inline;
+}
+
+ li {
+	display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
 }
