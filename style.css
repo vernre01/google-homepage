@@ -61,7 +61,7 @@ header ul li #signin {
 	padding: 8px 13px;
 }
 
-div {
+div.search {
 	height: calc(100vh - 98px);
 	min-height: 372px;
 	width:auto;
@@ -73,38 +73,54 @@ div.search img, div.search form, div.search ul{
 }
 
 div.search img {
-	padding-top: 40px;
-	height: auto;
-	width: 550px;
+	padding-top: 139px;
+	height: 92px;
+	width: auto;
 }
 
 div.search form {
-	padding: 20px;
+	height: 200px;
+	padding: 30px 0;
 	width: 500px;
 }
 
-div.search input {
-	height: 3em;
-	margin: 0 calc(.5*(500px - 420px));
-	width: 420px;
+div.search input[type=text] {
+	border-color: 1px solid #757575;
+	border-radius: 3px solid;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	line-height: 36px;
+	height: 2.5em;
+	margin: 0 calc(.5*(500px - 480px));
+	width: 480px;
 }
 
-div.search ul {
-	margin:auto;
-	padding:0;
-	position:relative;
-	width: 282px;
+div.search input[type=text]:focus {
+	outline: none;
 }
 
-div.search a {
+div.buttons {
+	height:50px;
+	width: calc(2*(148px));
+	margin: 20px auto;
+}
+
+div.buttons input[type=button] {
 	background-color: #f8f8f8;
+	border: 0;
 	color: #757575;
+	font-family: arial, sans-serif;
+	font-size: 13px;
 	font-weight:bold;
-	margin: 4px;
-	padding: 10px 15px;
+	height: 36px;
+	line-height: 27px;
+	margin: 10px 2px;
+	min-width: 142px;
+	padding: 0 15px;
+	position:relative;
 }
 
-div.search a:hover {
+div.buttons input[type=button]:hover {
 	background-color: #f8f8f8;
 	border: 1px solid #c6c6c6;
 	border-radius: 3px;
