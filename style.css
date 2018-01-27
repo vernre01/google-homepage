@@ -1,24 +1,25 @@
 body {
 	font-family: "arial", sans-serif;
 	font-size: 13px;
-	min-width: 980px;
-	min-height: 460px;
-	padding: 0;
 	margin: 0;
+	min-height: 460px;
+	min-width: 980px;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+    text-align: center;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 header {
 	display:inline-block;
 	height: 49px;
 	width: 100%;
-}
-
-header ul.leftmenu {
-	padding-left: 18px;
-}
-
-header ul.rightmenu {
-	padding-right: 18px;
 }
 
 header a {
@@ -29,29 +30,40 @@ header a:hover {
 	text-decoration: underline;
 }
 
+header ul.leftmenu {
+	padding-left: 18px;
+}
+
+header ul.rightmenu {
+	padding-right: 18px;
+}
+
+header ul.rightmenu img {
+	height: 15px;
+	margin: 0 4px;
+	opacity: .6;
+	width: 15px;
+}
+
+header ul.rightmenu img:hover {
+	opacity: 1.0;
+}
+
+header li {
+    padding: 18px 6px;
+}
+
+header ul li #signin {
+	background-color: blue;
+	border-radius: 3px;
+	color: white;
+	padding: 8px 13px;
+}
+
 div {
 	height: calc(100vh - 98px);
 	min-height: 372px;
 	width:auto;
-}
-
-footer {
-	height: 49px;
-	width: 100%;
-	background-color: lightgrey;
-	position: relative;
-	bottom: 0;
-}
-
-ul.rightmenu img {
-	height: 15px;
-	width: 15px;
-	margin: 0 4px;
-	opacity: .6;
-}
-
-ul.rightmenu img:hover {
-	opacity: 1.0;
 }
 
 div.search img, div.search form, div.search ul{
@@ -61,8 +73,8 @@ div.search img, div.search form, div.search ul{
 
 div.search img {
 	padding-top: 40px;
-	width: 550px;
 	height: auto;
+	width: 550px;
 }
 
 div.search form {
@@ -71,39 +83,38 @@ div.search form {
 }
 
 div.search input {
+	height: 3em;
 	margin: 0 calc(.5*(500px - 420px));
 	width: 420px;
-	height: 3em;
 }
 
 div.search ul {
-	width: 280px;
-	padding:0;
 	margin:auto;
+	padding:0;
 	position:relative;
+	width: 280px;
 }
 
 div.search a {
-	color: grey;
 	background-color: lightgrey;
-	padding: 10px 15px;
+	color: grey;
 	margin: 4px;
+	padding: 10px 15px;
 }
 
 div.search a:hover {
-	color: black;
 	background-color: lightgrey;
-	border-radius: 3px;
 	border: 1px solid grey;
+	border-radius: 3px;
+	color: black;
 }
 
-li {
-	display: inline-block;
-    text-align: center;
-}
-
-header li {
-    padding: 18px 6px;
+footer {
+	background-color: lightgrey;
+	bottom: 0;
+	height: 49px;
+	position: relative;
+	width: 100%;
 }
 
 footer li {
@@ -112,18 +123,14 @@ footer li {
 
 footer a{
 	color: grey;
-	text-decoration: none;
 	padding: 17px 0px;
-}
-
-a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .leftmenu, .rightmenu {
 	list-style-type: none;
-	overflow: hidden;
 	margin: 0;
+	overflow: hidden;
 	padding: 0;
 }
 
@@ -132,13 +139,6 @@ a:hover {
 }
 
 .rightmenu {
-	float: right;
 	display: inline;
-}
-
-#signin {
-	background-color: blue;
-	color: white;
-	padding: 8px 13px;
-	border-radius: 3px;
+	float: right;
 }
