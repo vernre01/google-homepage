@@ -71,10 +71,9 @@ div.search form {
 }
 
 div.search input {
-	margin: 0 calc(.5*(500px - 420px)) 0 calc(.5*(500px - 420px));
+	margin: 0 calc(.5*(500px - 420px));
 	width: 420px;
 	height: 3em;
-
 }
 
 div.search ul {
